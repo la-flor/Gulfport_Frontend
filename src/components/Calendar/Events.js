@@ -5,7 +5,7 @@ import axios from 'axios';
 import './Events.scss';
 
 const Events = () => {
-	const { REACT_APP_API_URL } = process.env;
+	const REACT_APP_API_URL = "https://gulfportvotes.herokuapp.com";
 	const [events, setEvents] = useState([])
 
 	useEffect(function loadEvents() {
