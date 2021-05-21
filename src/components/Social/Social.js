@@ -1,11 +1,12 @@
 import React from 'react';
 import './Social.scss';
+import Slideshow from './Slideshow';
 
 const Social = () => {
 	return (
 		<div className='Social'>
 			<div className='Social__Image'>
-				<img src='/images/social.jpg' alt='Social' />
+        <Slideshow />
 			</div>
 			<div className='Social__Contact'>
 				<div className='Social__Facebook'>

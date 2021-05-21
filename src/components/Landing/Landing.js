@@ -1,12 +1,10 @@
 import React from 'react';
-import Slideshow from './Slideshow';
-
 import './Landing.scss';
 
 const Landing = () => {
 	return (
 		<div className='Landing'>
-			<Slideshow />
+        <img className="Landing__BallotImage" src="/images/landing_arnaud-jaegers-unsplash.jpg" />
 			<div className='Landing__Container'>
 				<div className='Landing__Mission'>
 					<h5>Our Mission to the Community</h5>

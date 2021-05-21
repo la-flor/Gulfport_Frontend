@@ -1,0 +1,32 @@
+@import '../../CSSReset.css';
+@import '../../App.scss';
+
+.Slideshow {
+	display: flex;
+	width: 100vw;
+	height: 45vh;
+	&__Background {
+		width: 100%;
+		height: 45vh;
+		position: relative;
+    margin-top: 40px;
+	}
+	&__Images {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		opacity: 0;
+		transition: opacity 0.04s ease-in-out;
+		img {
+			object-fit: contain;
+			border-radius: 7px;
+		}
+	}
+}
+
+.Slideshow .Active {
+	opacity: 1;
+	transition-duration: 2s;
+}
